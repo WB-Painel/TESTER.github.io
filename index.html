@@ -15,24 +15,35 @@
 	  bottom:0;
 	  
 	  
-	  autoplay:true;
-	  muted:true;
-	  play();
-	  pause();
+	 // autoplay:true;
+	  //muted:true;
+	 // play();
+	//  pause();
 	  }
 	  </style>
-
-    <video autoplay="true" muted="true" class="SplashScreen" id="video-element">
-	  <source src="video/mobile8a294a15469eb62bc3bea8109336ff17_Hb0Z2jE6.mp4" type="video/mp4">
-	  </source>
+	<video class="SplashScreen" id="video-element">
+	 <source src="video/mobile.8a294a15469eb62bc3bea8109336ff17.mp4" type="video/mp4">
+	 </source>
 	</video>
 	
 	<script>
+	  f();
+	  function f(){
 	  setTimeout(function(){
 	  
-	  document.getElementsByTagName("body")[0].removeChild(document.getElementById("video-element"));
-	 // clearTimeout();
+	  document.getElementById("video-element").autoplay = "true";
+	  document.getElementById("video-element").muted = "true";
+	  document.getElementById("video-element").play();
+	  
+	  
+	 // document.getElementsByTagName("body")[0].removeChild(document.getElementById("video-element"));
+	 
+	 f();
+	 
+	 clearTimeout();
 	  },3210);
+	  
+	  }
 	  </script>
 	  
   </body>
