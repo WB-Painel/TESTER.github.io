@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+	
+	<style>
+	  
+	  .SplashScreen{
+	  position:fixed;
+	  left:0;
+	  top:0;
+	  right:0;
+	  bottom:0;
+	  
+	  
+	  autoplay:autoplay;
+	  muted:true;
+	  play();
+	  pause();
+	  }
+	  </style>
+
+    <video autoplay="autoplay" muted="true" class="SplashScreen" id="video-element">
+	  <source src="video/mobile.8a294a15469eb62bc3bea8109336ff17.mp4" type="video/mp4">
+	  </source>
+	</video>
+	
+	<script>
+	  setTimeout(function(){
+	  
+	  document.getElementsByTagName("body")[0].removeChild(document.getElementById("video-element"));
+	 // clearTimeout();
+	  },3210);
+	  </script>
+	  
+  </body>
+</html>		
